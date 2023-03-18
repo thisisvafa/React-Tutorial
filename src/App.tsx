@@ -3,6 +3,7 @@
 // import ListGroups from "./components/ListGroups";
 
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
   //   'Paris'
   // ];
 
+  let i = 0;
+
   // const handleSelectItem = (item: string) => {
   //   console.log(item);
   // }
@@ -24,7 +27,8 @@ function App() {
   // return <div><Alert text="Hello World" /></div>;
   return (
     <div>
-      <Alert>Hello World</Alert>
+      {/* <Alert>Hello World</Alert> */}
+      <Button color="danger" onClick={() => console.log('clicked '+ i++)}>Hello World</Button>
     </div>
   );
 }
